@@ -32,25 +32,25 @@ namespace cyclone
     #define REAL_MAX FLT_MAX
 
     /** Defines the precision of the square root operator. */
-    #define real_sqrt sqrtf
+    #define real_sqrt std::sqrtf
 
     /** Defines the precision of the absolute magnitude operator. */
-    #define real_abs fabsf
+    #define real_abs std::fabsf
 
     /** Defines the precision of the sine operator. */
-    #define real_sin sinf
+    #define real_sin std::sinf
 
     /** Defines the precision of the cosine operator. */
-    #define real_cos cosf
+    #define real_cos std::cosf
     
     /** Defines the precision of the exponent operator. */
-    #define real_exp expf
+    #define real_exp std::expf
 
     /** Defines the precision of the power operator. */
-    #define real_pow powf
+    #define real_pow std::powf
 
     /** Defines the precision of the floating point modulo operator. */
-    #define real_fmod fmodf
+    #define real_fmod std::fmodf
 
     /** Defines the number e on which 1+e == 1 **/
     #define real_epsilon FLT_EPSILON
@@ -74,25 +74,25 @@ namespace cyclone
     #define REAL_MAX DBL_MAX
 
     /** Defines the precision of the square root operator. */
-    #define real_sqrt sqrt
+    #define real_sqrt std::sqrt
 
     /** Defines the precision of the absolute magnitude operator. */
-    #define real_abs fabs
+    #define real_abs std::fabs
 
     /** Defines the precision of the sine operator. */
-    #define real_sin sin
+    #define real_sin std::sin
 
     /** Defines the precision of the cosine operator. */
-    #define real_cos cos
+    #define real_cos std::cos
 
     /** Defines the precision of the exponent operator. */
-    #define real_exp exp
+    #define real_exp std::exp
 
     /** Defines the precision of the power operator. */
-    #define real_pow pow
+    #define real_pow std::pow
 
     /** Defines the precision of the floating point modulo operator. */
-    #define real_fmod fmod
+    #define real_fmod std::fmod
 
     /** Defines the number e on which 1+e == 1 **/
     #define real_epsilon DBL_EPSILON

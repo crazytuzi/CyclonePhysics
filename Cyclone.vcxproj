@@ -20,9 +20,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\cyclone\Public\Precision.h" />
+    <ClInclude Include="include\cyclone\Public\Vector3.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="include\cyclone\Cyclone.cpp" />
+    <ClCompile Include="include\cyclone\Private\Vector3.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

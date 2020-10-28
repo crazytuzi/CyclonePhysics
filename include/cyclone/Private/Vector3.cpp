@@ -11,19 +11,19 @@ const Vector3 Vector3::Up = Vector3(0.f, 1.f, 0.f);
 
 const Vector3 Vector3::Right = Vector3(1.f, 0.f, 0.f);
 
-Vector3::Vector3(): x(0.f), y(0.f), z(0.f)
+Vector3::Vector3(): x(0.f), y(0.f), z(0.f), pad(0)
 {
 }
 
-Vector3::Vector3(const real v) : x(v), y(v), z(v)
+Vector3::Vector3(const real v) : x(v), y(v), z(v), pad(0)
 {
 }
 
-Vector3::Vector3(const real x, const real y, const real z) : x(x), y(y), z(z)
+Vector3::Vector3(const real x, const real y, const real z) : x(x), y(y), z(z), pad(0)
 {
 }
 
-Vector3::Vector3(const Vector3& v): x(v.x), y(v.y), z(v.z)
+Vector3::Vector3(const Vector3& v): x(v.x), y(v.y), z(v.z), pad(0)
 {
 }
 

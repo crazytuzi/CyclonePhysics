@@ -11,6 +11,7 @@ namespace cyclone
     class Vector3
     {
         typedef unsigned size_t;
+
     public:
         /** Holds the value along the x axis. */
         real x;

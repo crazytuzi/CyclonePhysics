@@ -24,6 +24,9 @@
     <ClInclude Include="include\cyclone\Public\Quaternion.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\cyclone\Public\Vector4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="include\cyclone\Cyclone.cpp">
@@ -33,6 +36,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="include\cyclone\Private\Quaternion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\cyclone\Private\Vector4.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -81,12 +81,12 @@ Vector3 Vector3::operator/(const real scale) const
 
 Vector3 Vector3::operator*(const Vector3& v) const
 {
-    return Vector3(x * v.x + y * v.y + z * v.z);
+    return Vector3(x * v.x, y * v.y, z * v.z);
 }
 
 Vector3 Vector3::operator/(const Vector3& v) const
 {
-    return Vector3(x / v.x + y / v.y + z / v.z);
+    return Vector3(x / v.x, y / v.y, z / v.z);
 }
 
 bool Vector3::operator==(const Vector3& v) const
@@ -184,7 +184,7 @@ real Vector3::SizeSquared() const
 
 void Vector3::Normalize()
 {
-    auto l = Size();
+    const auto l = Size();
 
     if (l > 0)
     {

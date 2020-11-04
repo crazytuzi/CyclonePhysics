@@ -190,7 +190,7 @@ namespace cyclone
         /**
         * Inverse of this quaternion.
         */
-        Quaternion Inverse(const Vector3& v) const;
+        Quaternion Inverse() const;
 
     private:
         static real DegreesToRadians(real deg);

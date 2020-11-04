@@ -101,7 +101,7 @@ Quaternion Quaternion::operator*(const real scale) const
     return Quaternion(i * scale, j * scale, k * scale, a * scale);
 }
 
-Quaternion Quaternion::operator/=(real scale)
+Quaternion Quaternion::operator/=(const real scale)
 {
     const auto reciprocal = 1.f / scale;
 
@@ -143,7 +143,7 @@ Quaternion Quaternion::MakeFromEuler(const Vector3& v)
     return MakeFromEuler(v.x, v.y, v.z);
 }
 
-Quaternion Quaternion::MakeFromEuler(real x, real y, real z)
+Quaternion Quaternion::MakeFromEuler(const real x, const real y, const real z)
 {
     const auto roll = DegreesToRadians(x);
 
@@ -251,7 +251,7 @@ Vector3 Quaternion::RotateVector(const Vector3& v) const
 {
     const Vector3 q(i, j, k);
 
-    const Vector3 t = 2.F * Vector3::CrossProduct(q, v);
+    const auto t = 2.f * Vector3::CrossProduct(q, v);
 
     return v + a * t + Vector3::CrossProduct(q, t);
 }
@@ -266,7 +266,7 @@ Vector3 Quaternion::UnrotateVector(const Vector3& v) const
     return v + a * t + Vector3::CrossProduct(q, t);
 }
 
-Quaternion Quaternion::Inverse(const Vector3& v) const
+Quaternion Quaternion::Inverse() const
 {
     return Quaternion(-i, -j, -k, a);
 }

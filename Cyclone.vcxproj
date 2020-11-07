@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\cyclone\Public\Matrix.h" />
     <ClInclude Include="include\cyclone\Public\Precision.h" />
     <ClInclude Include="include\cyclone\Public\Quaternion.h" />
     <ClInclude Include="include\cyclone\Public\Vector3.h" />
@@ -26,6 +27,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="include\cyclone\Cyclone.cpp" />
+    <ClCompile Include="include\cyclone\Private\Matrix.cpp" />
     <ClCompile Include="include\cyclone\Private\Quaternion.cpp" />
     <ClCompile Include="include\cyclone\Private\Vector3.cpp" />
     <ClCompile Include="include\cyclone\Private\Vector4.cpp" />

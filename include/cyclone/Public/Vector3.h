@@ -53,6 +53,11 @@ namespace cyclone
         Vector3(real x, real y, real z);
 
         /**
+        * Constructor using the XYZ components from a 4D vector.
+        */
+        Vector3(const class Vector4& v);
+
+        /**
         * Constructs a vector from a vector.
         */
         Vector3(const Vector3& v);

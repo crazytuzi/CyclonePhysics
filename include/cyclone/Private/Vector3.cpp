@@ -1,4 +1,5 @@
 #include "Vector3.h"
+#include "Vector4.h"
 #include <cmath>
 
 using namespace cyclone;
@@ -20,6 +21,10 @@ Vector3::Vector3(const real v) : x(v), y(v), z(v), pad(0)
 }
 
 Vector3::Vector3(const real x, const real y, const real z) : x(x), y(y), z(z), pad(0)
+{
+}
+
+Vector3::Vector3(const Vector4& v): x(v.x), y(v.y), z(v.z), pad(0)
 {
 }
 

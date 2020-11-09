@@ -19,7 +19,7 @@ namespace cyclone
     * Defines we're in single precision mode, for any code
     * that needs to be conditionally compiled.
     */
-    #define SINGLE_PRECISION
+    #define SINGLE_PRECISION true
 
     /**
     * Defines a real number precision. Cyclone can be compiled in
@@ -61,7 +61,7 @@ namespace cyclone
     * Defines we're in double precision mode, for any code
     * that needs to be conditionally compiled.
     */
-    #define DOUBLE_PRECISION
+    #define DOUBLE_PRECISION true
 
     /**
     * Defines a real number precision. Cyclone can be compiled in

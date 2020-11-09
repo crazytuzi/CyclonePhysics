@@ -30,6 +30,9 @@
     <ClInclude Include="include\cyclone\Public\Matrix.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\cyclone\Public\Random.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="include\cyclone\Cyclone.cpp">
@@ -45,6 +48,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="include\cyclone\Private\Matrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\cyclone\Private\Random.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

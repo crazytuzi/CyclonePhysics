@@ -211,6 +211,11 @@ namespace cyclone
         Vector3 Unit() const;
 
         /**
+        * Zero all the components of the vector.
+        */
+        void Reset();
+
+        /**
         * Euclidean distance between two points.
         */
         static real Distance(const Vector3& a, const Vector3& b);
@@ -224,12 +229,6 @@ namespace cyclone
         * Triple product of three vectors: X dot (Y cross Z).
         */
         static real Triple(const Vector3& a, const Vector3& b, const Vector3& c);
-
-        /**
-        * Gets the result of scaling the vector (multiplying each
-        * component by a value).
-        */
-        friend Vector3 operator*(const Vector3& u, real s);
 
         /**
         * Gets the result of scaling the vector (multiplying each

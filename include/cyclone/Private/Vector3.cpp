@@ -220,6 +220,11 @@ Vector3 Vector3::Unit() const
     return result;
 }
 
+void Vector3::Reset()
+{
+    x = y = z = 0.f;
+}
+
 real Vector3::Distance(const Vector3& a, const Vector3& b)
 {
     return real_sqrt(DistSquared(a, b));
@@ -235,11 +240,6 @@ real Vector3::Triple(const Vector3& a, const Vector3& b, const Vector3& c)
     return a.x * (b.y * c.z - b.z * c.y)
         + a.y * (b.z * c.x - b.x * c.z)
         + a.z * (b.x * c.y - b.y * c.x);
-}
-
-Vector3 cyclone::operator*(const Vector3& u, const real s)
-{
-    return Vector3(u.x * s, u.y * s, u.z * s);
 }
 
 Vector3 cyclone::operator*(const real s, const Vector3& u)

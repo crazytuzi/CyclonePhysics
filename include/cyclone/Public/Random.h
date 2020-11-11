@@ -1,5 +1,11 @@
 #pragma once
 
+/**
+* @file
+*
+* This file contains the definitions for a random number generator.
+*/
+
 #include "Precision.h"
 #include "Quaternion.h"
 #include "Vector3.h"

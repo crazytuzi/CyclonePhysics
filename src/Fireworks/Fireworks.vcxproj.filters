@@ -24,9 +24,15 @@
     <ClCompile Include="..\Timing.cpp">
       <Filter>Common Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\Application.cpp">
+      <Filter>Common Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Timing.h">
+      <Filter>Common Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Application.h">
       <Filter>Common Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -27,6 +27,9 @@
     <ClCompile Include="..\Application.cpp">
       <Filter>Common Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\main.cpp">
+      <Filter>Common Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Timing.h">
@@ -34,6 +37,9 @@
     </ClInclude>
     <ClInclude Include="..\Application.h">
       <Filter>Common Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Fireworks.h">
+      <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

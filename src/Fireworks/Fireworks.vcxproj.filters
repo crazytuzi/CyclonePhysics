@@ -30,6 +30,12 @@
     <ClCompile Include="..\main.cpp">
       <Filter>Common Files</Filter>
     </ClCompile>
+    <ClCompile Include="FireworkRule.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FireworksApplication.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Timing.h">
@@ -39,6 +45,12 @@
       <Filter>Common Files</Filter>
     </ClInclude>
     <ClInclude Include="Fireworks.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FireworkRule.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FireworksApplication.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

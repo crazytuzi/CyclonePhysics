@@ -1,10 +1,12 @@
 ﻿#include "Fireworks.h"
 
-/**
- * Called by the common demo framework to create an application
- * object (with new) and return a pointer.
- */
-Application* GetApplication()
+bool Firework::Update(const cyclone::real duration)
 {
-    return new Application();
+    // Update our physical state
+    Integrate(duration);
+
+    // We work backwards from our age to zero.
+    age -= duration;
+
+    return age < 0 || position.y < 0;
 }

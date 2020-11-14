@@ -49,7 +49,7 @@ private:
     // These are private to stop instances being created: use Get().
     Timing();
 
-private:
+public:
     /** The current render frame. This simply increments. */
     unsigned frameCount;
 

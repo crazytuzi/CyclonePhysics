@@ -13,10 +13,10 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Header Files\ParticleForceGenerator">
+    <Filter Include="Header Files\ParticleForce">
       <UniqueIdentifier>{be00f81f-372b-44d9-8258-4b10834e1449}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\ParticleForceGenerator">
+    <Filter Include="Source Files\ParticleForce">
       <UniqueIdentifier>{62f654c5-cb4f-490b-bfa7-dda35b114901}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -45,14 +45,17 @@
     <ClInclude Include="include\cyclone\Public\Core.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\cyclone\Public\ParticleForceGenerator\ParticleForceGenerator.h">
-      <Filter>Header Files\ParticleForceGenerator</Filter>
+    <ClInclude Include="include\cyclone\Public\ParticleForce\ParticleDrag.h">
+      <Filter>Header Files\ParticleForce</Filter>
     </ClInclude>
-    <ClInclude Include="include\cyclone\Public\ParticleForceGenerator\ParticleGravity.h">
-      <Filter>Header Files\ParticleForceGenerator</Filter>
+    <ClInclude Include="include\cyclone\Public\ParticleForce\ParticleForceGenerator.h">
+      <Filter>Header Files\ParticleForce</Filter>
     </ClInclude>
-    <ClInclude Include="include\cyclone\Public\ParticleForceGenerator\ParticleDrag.h">
-      <Filter>Header Files\ParticleForceGenerator</Filter>
+    <ClInclude Include="include\cyclone\Public\ParticleForce\ParticleGravity.h">
+      <Filter>Header Files\ParticleForce</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cyclone\Public\ParticleForce\ParticleForceRegistry.h">
+      <Filter>Header Files\ParticleForce</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -74,11 +77,14 @@
     <ClCompile Include="include\cyclone\Private\Particle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="include\cyclone\Private\ParticleForceGenerator\ParticleGravity.cpp">
-      <Filter>Source Files\ParticleForceGenerator</Filter>
+    <ClCompile Include="include\cyclone\Private\ParticleForce\ParticleDrag.cpp">
+      <Filter>Source Files\ParticleForce</Filter>
     </ClCompile>
-    <ClCompile Include="include\cyclone\Private\ParticleForceGenerator\ParticleDrag.cpp">
-      <Filter>Source Files\ParticleForceGenerator</Filter>
+    <ClCompile Include="include\cyclone\Private\ParticleForce\ParticleGravity.cpp">
+      <Filter>Source Files\ParticleForce</Filter>
+    </ClCompile>
+    <ClCompile Include="include\cyclone\Private\ParticleForce\ParticleForceRegistry.cpp">
+      <Filter>Source Files\ParticleForce</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

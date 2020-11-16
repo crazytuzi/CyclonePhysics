@@ -1,10 +1,12 @@
-#include "ParticleForceGenerator/ParticleDrag.h"
+#include "ParticleForce/ParticleDrag.h"
 
-cyclone::ParticleDrag::ParticleDrag(const real k1, const real k2): k1(k1), k2(k2)
+using namespace cyclone;
+
+ParticleDrag::ParticleDrag(const real k1, const real k2): k1(k1), k2(k2)
 {
 }
 
-void cyclone::ParticleDrag::UpdateForce(Particle* particle, real duration)
+void ParticleDrag::UpdateForce(Particle* particle, real duration)
 {
     Vector3 force;
 

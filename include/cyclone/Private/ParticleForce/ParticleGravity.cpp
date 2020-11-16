@@ -1,10 +1,12 @@
-#include "ParticleForceGenerator/ParticleGravity.h"
+#include "ParticleForce/ParticleGravity.h"
 
-cyclone::ParticleGravity::ParticleGravity(const Vector3& gravity): gravity(gravity)
+using namespace cyclone;
+
+ParticleGravity::ParticleGravity(const Vector3& gravity): gravity(gravity)
 {
 }
 
-void cyclone::ParticleGravity::UpdateForce(Particle* particle, real duration)
+void ParticleGravity::UpdateForce(Particle* particle, real duration)
 {
     // Check that we do not have infinite mass
     if (!particle->HasFiniteMass())

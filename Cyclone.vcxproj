@@ -22,6 +22,9 @@
     <ClInclude Include="include\cyclone\Public\Core.h" />
     <ClInclude Include="include\cyclone\Public\Matrix.h" />
     <ClInclude Include="include\cyclone\Public\Particle.h" />
+    <ClInclude Include="include\cyclone\Public\ParticleForceGenerator\ParticleDrag.h" />
+    <ClInclude Include="include\cyclone\Public\ParticleForceGenerator\ParticleForceGenerator.h" />
+    <ClInclude Include="include\cyclone\Public\ParticleForceGenerator\ParticleGravity.h" />
     <ClInclude Include="include\cyclone\Public\Precision.h" />
     <ClInclude Include="include\cyclone\Public\Quaternion.h" />
     <ClInclude Include="include\cyclone\Public\Random.h" />
@@ -31,6 +34,8 @@
   <ItemGroup>
     <ClCompile Include="include\cyclone\Private\Matrix.cpp" />
     <ClCompile Include="include\cyclone\Private\Particle.cpp" />
+    <ClCompile Include="include\cyclone\Private\ParticleForceGenerator\ParticleDrag.cpp" />
+    <ClCompile Include="include\cyclone\Private\ParticleForceGenerator\ParticleGravity.cpp" />
     <ClCompile Include="include\cyclone\Private\Quaternion.cpp" />
     <ClCompile Include="include\cyclone\Private\Random.cpp" />
     <ClCompile Include="include\cyclone\Private\Vector3.cpp" />

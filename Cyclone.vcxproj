@@ -22,10 +22,16 @@
     <ClInclude Include="include\cyclone\Public\Core.h" />
     <ClInclude Include="include\cyclone\Public\Matrix.h" />
     <ClInclude Include="include\cyclone\Public\Particle.h" />
+    <ClInclude Include="include\cyclone\Public\ParticleForce\ParticleAnchoredBungee.h" />
+    <ClInclude Include="include\cyclone\Public\ParticleForce\ParticleAnchoredSpring.h" />
+    <ClInclude Include="include\cyclone\Public\ParticleForce\ParticleBungee.h" />
+    <ClInclude Include="include\cyclone\Public\ParticleForce\ParticleBuoyancy.h" />
     <ClInclude Include="include\cyclone\Public\ParticleForce\ParticleDrag.h" />
+    <ClInclude Include="include\cyclone\Public\ParticleForce\ParticleFakeSpring.h" />
     <ClInclude Include="include\cyclone\Public\ParticleForce\ParticleForceGenerator.h" />
     <ClInclude Include="include\cyclone\Public\ParticleForce\ParticleForceRegistry.h" />
     <ClInclude Include="include\cyclone\Public\ParticleForce\ParticleGravity.h" />
+    <ClInclude Include="include\cyclone\Public\ParticleForce\ParticleSpring.h" />
     <ClInclude Include="include\cyclone\Public\Precision.h" />
     <ClInclude Include="include\cyclone\Public\Quaternion.h" />
     <ClInclude Include="include\cyclone\Public\Random.h" />
@@ -35,9 +41,15 @@
   <ItemGroup>
     <ClCompile Include="include\cyclone\Private\Matrix.cpp" />
     <ClCompile Include="include\cyclone\Private\Particle.cpp" />
+    <ClCompile Include="include\cyclone\Private\ParticleForce\ParticleAnchoredBungee.cpp" />
+    <ClCompile Include="include\cyclone\Private\ParticleForce\ParticleAnchoredSpring.cpp" />
+    <ClCompile Include="include\cyclone\Private\ParticleForce\ParticleBungee.cpp" />
+    <ClCompile Include="include\cyclone\Private\ParticleForce\ParticleBuoyancy.cpp" />
     <ClCompile Include="include\cyclone\Private\ParticleForce\ParticleDrag.cpp" />
+    <ClCompile Include="include\cyclone\Private\ParticleForce\ParticleFakeSpring.cpp" />
     <ClCompile Include="include\cyclone\Private\ParticleForce\ParticleForceRegistry.cpp" />
     <ClCompile Include="include\cyclone\Private\ParticleForce\ParticleGravity.cpp" />
+    <ClCompile Include="include\cyclone\Private\ParticleForce\ParticleSpring.cpp" />
     <ClCompile Include="include\cyclone\Private\Quaternion.cpp" />
     <ClCompile Include="include\cyclone\Private\Random.cpp" />
     <ClCompile Include="include\cyclone\Private\Vector3.cpp" />

@@ -57,6 +57,24 @@
     <ClInclude Include="include\cyclone\Public\ParticleForce\ParticleForceRegistry.h">
       <Filter>Header Files\ParticleForce</Filter>
     </ClInclude>
+    <ClInclude Include="include\cyclone\Public\ParticleForce\ParticleSpring.h">
+      <Filter>Header Files\ParticleForce</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cyclone\Public\ParticleForce\ParticleAnchoredSpring.h">
+      <Filter>Header Files\ParticleForce</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cyclone\Public\ParticleForce\ParticleBungee.h">
+      <Filter>Header Files\ParticleForce</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cyclone\Public\ParticleForce\ParticleBuoyancy.h">
+      <Filter>Header Files\ParticleForce</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cyclone\Public\ParticleForce\ParticleAnchoredBungee.h">
+      <Filter>Header Files\ParticleForce</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cyclone\Public\ParticleForce\ParticleFakeSpring.h">
+      <Filter>Header Files\ParticleForce</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="include\cyclone\Private\Vector3.cpp">
@@ -84,6 +102,24 @@
       <Filter>Source Files\ParticleForce</Filter>
     </ClCompile>
     <ClCompile Include="include\cyclone\Private\ParticleForce\ParticleForceRegistry.cpp">
+      <Filter>Source Files\ParticleForce</Filter>
+    </ClCompile>
+    <ClCompile Include="include\cyclone\Private\ParticleForce\ParticleSpring.cpp">
+      <Filter>Source Files\ParticleForce</Filter>
+    </ClCompile>
+    <ClCompile Include="include\cyclone\Private\ParticleForce\ParticleAnchoredSpring.cpp">
+      <Filter>Source Files\ParticleForce</Filter>
+    </ClCompile>
+    <ClCompile Include="include\cyclone\Private\ParticleForce\ParticleBungee.cpp">
+      <Filter>Source Files\ParticleForce</Filter>
+    </ClCompile>
+    <ClCompile Include="include\cyclone\Private\ParticleForce\ParticleBuoyancy.cpp">
+      <Filter>Source Files\ParticleForce</Filter>
+    </ClCompile>
+    <ClCompile Include="include\cyclone\Private\ParticleForce\ParticleAnchoredBungee.cpp">
+      <Filter>Source Files\ParticleForce</Filter>
+    </ClCompile>
+    <ClCompile Include="include\cyclone\Private\ParticleForce\ParticleFakeSpring.cpp">
       <Filter>Source Files\ParticleForce</Filter>
     </ClCompile>
   </ItemGroup>

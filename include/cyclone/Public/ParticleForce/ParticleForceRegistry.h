@@ -36,6 +36,7 @@ namespace cyclone
         * their corresponding particles.
         */
         void UpdateForces(real duration);
+
     protected:
         /**
         * Keeps track of one force generator and the particle it

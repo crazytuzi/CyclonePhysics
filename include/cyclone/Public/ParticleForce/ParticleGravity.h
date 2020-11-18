@@ -16,7 +16,8 @@ namespace cyclone
 
         /** Applies the gravitational force to the given particle. */
         void UpdateForce(Particle* particle, real duration) override;
-    private:
+
+    protected:
         /** Holds the acceleration due to gravity. */
         Vector3 gravity;
     };

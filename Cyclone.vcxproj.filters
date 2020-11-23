@@ -19,6 +19,12 @@
     <Filter Include="Source Files\ParticleForce">
       <UniqueIdentifier>{62f654c5-cb4f-490b-bfa7-dda35b114901}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\ParticleContact">
+      <UniqueIdentifier>{66d40dc1-d55a-451e-9d7d-6abff98a5fe2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ParticleContact">
+      <UniqueIdentifier>{080ba5dd-c579-417a-8c0a-4e1819063d89}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\cyclone\Public\Precision.h">
@@ -75,6 +81,33 @@
     <ClInclude Include="include\cyclone\Public\ParticleForce\ParticleFakeSpring.h">
       <Filter>Header Files\ParticleForce</Filter>
     </ClInclude>
+    <ClInclude Include="include\cyclone\Public\ParticleContact\ParticleContact.h">
+      <Filter>Header Files\ParticleContact</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cyclone\Public\ParticleContact\ParticleContactResolver.h">
+      <Filter>Header Files\ParticleContact</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cyclone\Public\ParticleContact\ParticleContactGenerator.h">
+      <Filter>Header Files\ParticleContact</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cyclone\Public\ParticleContact\ParticleCable.h">
+      <Filter>Header Files\ParticleContact</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cyclone\Public\ParticleContact\ParticleRod.h">
+      <Filter>Header Files\ParticleContact</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cyclone\Public\ParticleContact\ParticleLink.h">
+      <Filter>Header Files\ParticleContact</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cyclone\Public\ParticleContact\ParticleConstraint.h">
+      <Filter>Header Files\ParticleContact</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cyclone\Public\ParticleContact\ParticleCableConstraint.h">
+      <Filter>Header Files\ParticleContact</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cyclone\Public\ParticleContact\ParticleRodConstraint.h">
+      <Filter>Header Files\ParticleContact</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="include\cyclone\Private\Vector3.cpp">
@@ -121,6 +154,30 @@
     </ClCompile>
     <ClCompile Include="include\cyclone\Private\ParticleForce\ParticleFakeSpring.cpp">
       <Filter>Source Files\ParticleForce</Filter>
+    </ClCompile>
+    <ClCompile Include="include\cyclone\Private\ParticleContact\ParticleContact.cpp">
+      <Filter>Source Files\ParticleContact</Filter>
+    </ClCompile>
+    <ClCompile Include="include\cyclone\Private\ParticleContact\ParticleContactResolver.cpp">
+      <Filter>Source Files\ParticleContact</Filter>
+    </ClCompile>
+    <ClCompile Include="include\cyclone\Private\ParticleContact\ParticleLink.cpp">
+      <Filter>Source Files\ParticleContact</Filter>
+    </ClCompile>
+    <ClCompile Include="include\cyclone\Private\ParticleContact\ParticleCable.cpp">
+      <Filter>Source Files\ParticleContact</Filter>
+    </ClCompile>
+    <ClCompile Include="include\cyclone\Private\ParticleContact\ParticleRod.cpp">
+      <Filter>Source Files\ParticleContact</Filter>
+    </ClCompile>
+    <ClCompile Include="include\cyclone\Private\ParticleContact\ParticleConstraint.cpp">
+      <Filter>Source Files\ParticleContact</Filter>
+    </ClCompile>
+    <ClCompile Include="include\cyclone\Private\ParticleContact\ParticleCableConstraint.cpp">
+      <Filter>Source Files\ParticleContact</Filter>
+    </ClCompile>
+    <ClCompile Include="include\cyclone\Private\ParticleContact\ParticleRodConstraint.cpp">
+      <Filter>Source Files\ParticleContact</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

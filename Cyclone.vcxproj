@@ -22,6 +22,15 @@
     <ClInclude Include="include\cyclone\Public\Core.h" />
     <ClInclude Include="include\cyclone\Public\Matrix.h" />
     <ClInclude Include="include\cyclone\Public\Particle.h" />
+    <ClInclude Include="include\cyclone\Public\ParticleContact\ParticleCable.h" />
+    <ClInclude Include="include\cyclone\Public\ParticleContact\ParticleCableConstraint.h" />
+    <ClInclude Include="include\cyclone\Public\ParticleContact\ParticleConstraint.h" />
+    <ClInclude Include="include\cyclone\Public\ParticleContact\ParticleContact.h" />
+    <ClInclude Include="include\cyclone\Public\ParticleContact\ParticleContactGenerator.h" />
+    <ClInclude Include="include\cyclone\Public\ParticleContact\ParticleContactResolver.h" />
+    <ClInclude Include="include\cyclone\Public\ParticleContact\ParticleLink.h" />
+    <ClInclude Include="include\cyclone\Public\ParticleContact\ParticleRod.h" />
+    <ClInclude Include="include\cyclone\Public\ParticleContact\ParticleRodConstraint.h" />
     <ClInclude Include="include\cyclone\Public\ParticleForce\ParticleAnchoredBungee.h" />
     <ClInclude Include="include\cyclone\Public\ParticleForce\ParticleAnchoredSpring.h" />
     <ClInclude Include="include\cyclone\Public\ParticleForce\ParticleBungee.h" />
@@ -41,6 +50,14 @@
   <ItemGroup>
     <ClCompile Include="include\cyclone\Private\Matrix.cpp" />
     <ClCompile Include="include\cyclone\Private\Particle.cpp" />
+    <ClCompile Include="include\cyclone\Private\ParticleContact\ParticleCable.cpp" />
+    <ClCompile Include="include\cyclone\Private\ParticleContact\ParticleCableConstraint.cpp" />
+    <ClCompile Include="include\cyclone\Private\ParticleContact\ParticleConstraint.cpp" />
+    <ClCompile Include="include\cyclone\Private\ParticleContact\ParticleContact.cpp" />
+    <ClCompile Include="include\cyclone\Private\ParticleContact\ParticleContactResolver.cpp" />
+    <ClCompile Include="include\cyclone\Private\ParticleContact\ParticleLink.cpp" />
+    <ClCompile Include="include\cyclone\Private\ParticleContact\ParticleRod.cpp" />
+    <ClCompile Include="include\cyclone\Private\ParticleContact\ParticleRodConstraint.cpp" />
     <ClCompile Include="include\cyclone\Private\ParticleForce\ParticleAnchoredBungee.cpp" />
     <ClCompile Include="include\cyclone\Private\ParticleForce\ParticleAnchoredSpring.cpp" />
     <ClCompile Include="include\cyclone\Private\ParticleForce\ParticleBungee.cpp" />

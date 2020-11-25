@@ -1,6 +1,6 @@
 #pragma once
 
-#include "cyclone/Core.h"
+#include "cyclone/Core/Core.h"
 #include "Fireworks.h"
 
 /**

@@ -1,6 +1,6 @@
 #pragma once
 
-#include "cyclone/Particle.h"
+#include "cyclone/Particle/Particle.h"
 
 /**
 * Fireworks are particles, with additional data for rendering and

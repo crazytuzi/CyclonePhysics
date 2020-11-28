@@ -120,6 +120,12 @@
     <ClInclude Include="include\cyclone\Public\Particle\ParticleForce\ParticleSpring.h">
       <Filter>Header Files\Particle\ParticleForce</Filter>
     </ClInclude>
+    <ClInclude Include="include\cyclone\Public\Particle\ParticleWorld.h">
+      <Filter>Header Files\Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cyclone\Public\Particle\ParticleContact\GroundContacts.h">
+      <Filter>Header Files\Particle\ParticleContact</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="include\cyclone\Private\Core\Matrix.cpp">
@@ -190,6 +196,12 @@
     </ClCompile>
     <ClCompile Include="include\cyclone\Private\Particle\ParticleForce\ParticleSpring.cpp">
       <Filter>Source Files\Particle\ParticleForce</Filter>
+    </ClCompile>
+    <ClCompile Include="include\cyclone\Private\Particle\ParticleWorld.cpp">
+      <Filter>Source Files\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="include\cyclone\Private\Particle\ParticleContact\GroundContacts.cpp">
+      <Filter>Source Files\Particle\ParticleContact</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

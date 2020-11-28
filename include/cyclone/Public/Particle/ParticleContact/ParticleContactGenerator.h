@@ -11,6 +11,7 @@ namespace cyclone
     class ParticleContactGenerator
     {
     public:
+        virtual ~ParticleContactGenerator() = default;
         /**
         * Fills the given contact structure with the generated
         * contact. The contact pointer should point to the first
@@ -19,6 +20,6 @@ namespace cyclone
         * to. The method returns the number of contacts that have
         * been written.
         */
-        virtual unsigned addContact(ParticleContact* contact, unsigned limit) const = 0;
+        virtual unsigned AddContact(ParticleContact* contact, unsigned limit) const = 0;
     };
 }

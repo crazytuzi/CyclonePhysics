@@ -17,7 +17,12 @@ MassAggregateApplication::MassAggregateApplication(const unsigned particleCount)
 
 MassAggregateApplication::~MassAggregateApplication()
 {
-    delete[] particles;
+    if (particles)
+    {
+        delete[] particles;
+
+        particles = nullptr;
+    }
 }
 
 void MassAggregateApplication::Update()

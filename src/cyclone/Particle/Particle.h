@@ -8,8 +8,8 @@
 * assemblies.
 */
 
-#include "Core/Precision.h"
-#include "Core/Vector3.h"
+#include "cyclone/Core/Precision.h"
+#include "cyclone/Core/Vector3.h"
 
 namespace cyclone
 {

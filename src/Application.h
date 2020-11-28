@@ -1,7 +1,7 @@
 #pragma once
 
 /**
-* An application is the base class for all demonstration progams.
+* An application is the base class for all demonstration programs.
 * GLUT is a c-style API, which calls bare functions. This makes
 * it more difficult to provide default services for all demos and
 * only override them when needed.

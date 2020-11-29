@@ -64,7 +64,7 @@ unsigned PlatformContactGenerator::AddContact(cyclone::ParticleContact* contact,
 
                 contact->particle[1] = nullptr;
 
-                contact->penetration = BLOB_RADIUS - toParticle.SizeSquared();
+                contact->penetration = BLOB_RADIUS - toParticle.Size();
 
                 ++used;
 

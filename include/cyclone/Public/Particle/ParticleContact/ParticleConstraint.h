@@ -23,7 +23,7 @@ namespace cyclone
         * virtual) in the parent class, but is replicated here for
         * documentation purposes.
         */
-        virtual unsigned AddContact(ParticleContact* contact, unsigned limit) const = 0;
+        unsigned AddContact(ParticleContact* contact, unsigned limit) const override = 0;
 
     protected:
         /**

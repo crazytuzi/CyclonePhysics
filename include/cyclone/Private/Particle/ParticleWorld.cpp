@@ -12,7 +12,12 @@ ParticleWorld::ParticleWorld(const unsigned maxContacts, const unsigned iteratio
 
 ParticleWorld::~ParticleWorld()
 {
-    delete[] contacts;
+    if (contacts)
+    {
+        delete[] contacts;
+
+        contacts = nullptr;
+    }
 }
 
 unsigned ParticleWorld::GenerateContacts()

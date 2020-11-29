@@ -31,7 +31,6 @@ void MassAggregateApplication::Update()
     world.StartFrame();
 
     // Find the duration of the last frame in seconds
-
     const auto duration = Timing::Get().lastFrameDuration * 0.001f;
 
     if (duration <= 0.f)

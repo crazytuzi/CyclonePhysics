@@ -36,7 +36,7 @@ Vector3::Vector3(const Vector3& v): x(v.x), y(v.y), z(v.z), pad(0.f)
 
 Vector3 Vector3::operator^(const Vector3& v) const
 {
-    return Vector3(y * v.z - z - z * v.y,
+    return Vector3(y * v.z - z * v.y,
                    z * v.x - x * v.z,
                    x * v.y - y * v.x);
 }

@@ -69,7 +69,7 @@ real Random::RandomReal()
     } convert;
 
     // Now assign the bits to the word. This works by fixing the ieee
-// sign and exponent bits (so that the size of the result is 1-2)
+    // sign and exponent bits (so that the size of the result is 1-2)
     // and using the bits to create the fraction part of the float.
     convert.word = (bits >> 9) | 0x3f800000;
 

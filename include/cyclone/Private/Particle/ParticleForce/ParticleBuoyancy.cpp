@@ -8,7 +8,7 @@ ParticleBuoyancy::ParticleBuoyancy(const real maxDepth, const real volume, const
 {
 }
 
-void ParticleBuoyancy::UpdateForce(Particle* particle, real duration)
+void ParticleBuoyancy::UpdateForce(Particle* particle, const real deltaTime)
 {
     if (particle != nullptr)
     {

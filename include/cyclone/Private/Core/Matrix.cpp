@@ -287,7 +287,6 @@ Matrix Matrix::Inverse() const
             2][1] + M[2][0] * M[0][1] * M[1][2] - M[2][0] * M[0][2] * M[1][1]
     };
 
-
     auto det = M[0][0] * inv[0] + M[0][1] * inv[4] + M[0][2] * inv[8] + M[0][3] * inv[12];
 
     if (det != 0.f)

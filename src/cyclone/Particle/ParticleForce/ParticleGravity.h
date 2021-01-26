@@ -15,7 +15,7 @@ namespace cyclone
         ParticleGravity(const Vector3& gravity);
 
         /** Applies the gravitational force to the given particle. */
-        void UpdateForce(Particle* particle, real duration) override;
+        void UpdateForce(Particle* particle, real deltaTime) override;
 
     protected:
         /** Holds the acceleration due to gravity. */

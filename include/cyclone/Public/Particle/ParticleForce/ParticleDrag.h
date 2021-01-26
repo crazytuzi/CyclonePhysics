@@ -15,7 +15,7 @@ namespace cyclone
         ParticleDrag(real k1, real k2);
 
         /** Applies the drag force to the given particle. */
-        void UpdateForce(Particle* particle, real duration) override;
+        void UpdateForce(Particle* particle, real deltaTime) override;
 
     protected:
         /** Holds the velocity drag coefficient. */

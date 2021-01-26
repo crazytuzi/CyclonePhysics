@@ -15,7 +15,7 @@ namespace cyclone
         ParticleBuoyancy(real maxDepth, real volume, real waterHeight, real liquidDensity = 1000.0f);
 
         /** Applies the buoyancy force to the given particle. */
-        void UpdateForce(Particle* particle, real duration) override;
+        void UpdateForce(Particle* particle, real deltaTime) override;
 
     protected:
         /**

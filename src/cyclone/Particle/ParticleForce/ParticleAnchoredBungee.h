@@ -8,6 +8,6 @@ namespace cyclone
     {
     public:
         /** Applies the spring force to the given particle. */
-        void UpdateForce(Particle* particle, real duration) override;
+        void UpdateForce(Particle* particle, real deltaTime) override;
     };
 }

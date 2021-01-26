@@ -6,7 +6,7 @@ ParticleGravity::ParticleGravity(const Vector3& gravity): gravity(gravity)
 {
 }
 
-void ParticleGravity::UpdateForce(Particle* particle, real duration)
+void ParticleGravity::UpdateForce(Particle* particle, real deltaTime)
 {
     if (particle != nullptr)
     {

@@ -8,7 +8,7 @@ ParticleFakeSpring::ParticleFakeSpring(Vector3* anchor, const real springConstan
 {
 }
 
-void ParticleFakeSpring::UpdateForce(Particle* particle, const real duration)
+void ParticleFakeSpring::UpdateForce(Particle* particle, const real deltaTime)
 {
     if (particle != nullptr && anchor != nullptr)
     {
@@ -36,13 +36,13 @@ void ParticleFakeSpring::UpdateForce(Particle* particle, const real duration)
         const auto c = position * (damping / (2.f * gamma)) + particle->GetVelocity() * (1.f / gamma);
 
         // Calculate the target position
-        auto target = position + real_cos(gamma * duration) + c * real_sin(gamma * duration);
+        auto target = position * real_cos(gamma * deltaTime) + c * real_sin(gamma * deltaTime);
 
-        target *= real_exp(-0.5f * duration * damping);
+        target *= real_exp(-0.5f * deltaTime * damping);
 
         // Calculate the resulting acceleration and therefore the force
-        const auto acceleration = (target - position) * (static_cast<real>(1.f) / (duration * duration)) -
-            particle->GetVelocity() * (static_cast<real>(1.f) / duration);
+        const auto acceleration = (target - position) * (static_cast<real>(1.f) / (deltaTime * deltaTime))
+            - particle->GetVelocity();
 
         particle->AddForce(acceleration * particle->GetMass());
     }

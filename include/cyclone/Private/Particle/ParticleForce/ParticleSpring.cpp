@@ -1,5 +1,4 @@
 #include "Particle/ParticleForce/ParticleSpring.h"
-#include <cmath>
 
 using namespace cyclone;
 
@@ -22,9 +21,7 @@ void ParticleSpring::UpdateForce(Particle* particle, const real duration)
         // Calculate the magnitude of the force
         auto magnitude = force.Size();
 
-        magnitude = real_abs(magnitude - restLength);
-
-        magnitude *= springConstant;
+        magnitude = (magnitude - restLength) * springConstant;
 
         // Calculate the final force and apply it
         force.Normalize();

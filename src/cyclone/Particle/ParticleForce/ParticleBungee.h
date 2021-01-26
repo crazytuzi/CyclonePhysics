@@ -11,12 +11,11 @@ namespace cyclone
     class ParticleBungee : public ParticleForceGenerator
     {
     public:
-
         /** Creates a new bungee with the given parameters. */
         ParticleBungee(Particle* other, real springConstant, real restLength);
 
         /** Applies the spring force to the given particle. */
-        void UpdateForce(Particle* particle, real duration) override;
+        void UpdateForce(Particle* particle, real deltaTime) override;
 
     protected:
         /** The particle at the other end of the spring. */

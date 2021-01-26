@@ -8,7 +8,7 @@ ParticleAnchoredSpring::ParticleAnchoredSpring(Vector3* anchor, const real sprin
 {
 }
 
-void ParticleAnchoredSpring::UpdateForce(Particle* particle, const real duration)
+void ParticleAnchoredSpring::UpdateForce(Particle* particle, const real deltaTime)
 {
     if (particle != nullptr && anchor != nullptr)
     {
@@ -22,14 +22,7 @@ void ParticleAnchoredSpring::UpdateForce(Particle* particle, const real duration
         // Calculate the magnitude of the force
         auto magnitude = force.Size();
 
-        if (magnitude <= restLength)
-        {
-            return;
-        }
-
-        magnitude = magnitude - restLength;
-
-        magnitude *= springConstant;
+        magnitude = (magnitude - restLength) * springConstant;
 
         // Calculate the final force and apply it
         force.Normalize();

@@ -17,6 +17,7 @@ namespace cyclone
         * given particle.
         */
         void Add(Particle* particle, ParticleForceGenerator* forceGenerator);
+        
         /**
         * Removes the given registered pair from the registry.
         * If the pair is not registered, this method will have
@@ -35,7 +36,7 @@ namespace cyclone
         * Calls all the force generators to update the forces of
         * their corresponding particles.
         */
-        void UpdateForces(real duration);
+        void UpdateForces(real deltaTime);
 
     protected:
         /**

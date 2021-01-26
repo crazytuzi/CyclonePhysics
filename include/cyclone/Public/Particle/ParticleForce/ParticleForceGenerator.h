@@ -21,6 +21,6 @@ namespace cyclone
         * Overload this in implementations of the interface to calculate
         * and update the force applied to the given particle.
         */
-        virtual void UpdateForce(Particle* particle, real duration) = 0;
+        virtual void UpdateForce(Particle* particle, real deltaTime) = 0;
     };
 }

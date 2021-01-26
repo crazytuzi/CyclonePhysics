@@ -7,7 +7,7 @@ ParticleBungee::ParticleBungee(Particle* other, const real springConstant, const
 {
 }
 
-void ParticleBungee::UpdateForce(Particle* particle, const real duration)
+void ParticleBungee::UpdateForce(Particle* particle, const real deltaTime)
 {
     if (particle != nullptr && other != nullptr)
     {
@@ -27,7 +27,7 @@ void ParticleBungee::UpdateForce(Particle* particle, const real duration)
         }
 
         // Calculate the magnitude of the force
-        magnitude = springConstant * (restLength - magnitude);
+        magnitude = (magnitude - restLength) * springConstant;
 
         // Calculate the final force and apply it
         force.Normalize();

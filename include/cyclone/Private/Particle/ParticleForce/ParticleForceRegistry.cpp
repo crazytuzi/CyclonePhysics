@@ -25,13 +25,13 @@ void ParticleForceRegistry::Clear()
     registrations.clear();
 }
 
-void ParticleForceRegistry::UpdateForces(const real duration)
+void ParticleForceRegistry::UpdateForces(const real deltaTime)
 {
     for (const auto& registry : registrations)
     {
         if (registry.forceGenerator != nullptr)
         {
-            registry.forceGenerator->UpdateForce(registry.particle, duration);
+            registry.forceGenerator->UpdateForce(registry.particle, deltaTime);
         }
     }
 }

@@ -31,9 +31,6 @@ namespace cyclone
         /**
         * Returns the current length of the link.
         */
-        /**
-        * Returns the current length of the link.
-        */
         real CurrentLength() const;
 
     public:

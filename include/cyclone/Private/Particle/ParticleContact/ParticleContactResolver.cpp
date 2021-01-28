@@ -13,7 +13,7 @@ void ParticleContactResolver::SetIterations(const unsigned iterations)
 }
 
 void ParticleContactResolver::ResolveContacts(ParticleContact* contactArray, const unsigned numContacts,
-                                              const real duration)
+                                              const real deltaTime)
 {
     iterationsUsed = 0;
 
@@ -43,7 +43,7 @@ void ParticleContactResolver::ResolveContacts(ParticleContact* contactArray, con
         }
 
         // Resolve this contact
-        contactArray[maxIndex].Resolve(duration);
+        contactArray[maxIndex].Resolve(deltaTime);
 
         // Update the inter penetrations for all particles
         const auto& move = contactArray[maxIndex].particleMovement;

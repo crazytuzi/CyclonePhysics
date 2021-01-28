@@ -20,7 +20,7 @@ namespace cyclone
         /**
         * Resolves this contact, for both velocity and interpenetration.
         */
-        void Resolve(real duration);
+        void Resolve(real deltaTime);
 
         /**
         * Calculates the separating velocity at this contact.
@@ -31,12 +31,12 @@ namespace cyclone
         /**
         * Handles the impulse calculations for this collision.
         */
-        void ResolveVelocity(real duration);
+        void ResolveVelocity(real deltaTime);
 
         /**
         * Handles the interpenetration resolution for this contact.
         */
-        void ResolveInterpenetration(real duration);
+        void ResolveInterpenetration(real deltaTime);
 
     public:
         /**

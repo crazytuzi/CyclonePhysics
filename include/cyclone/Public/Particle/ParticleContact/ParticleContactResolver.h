@@ -36,10 +36,10 @@ namespace cyclone
         * @param numContacts The number of contacts in the array to
         * resolve.
         *
-        * @param duration The duration of the previous integration step.
+        * @param deltaTime The deltaTime of the previous integration step.
         * This is used to compensate for forces applied.
         */
-        void ResolveContacts(ParticleContact* contactArray, unsigned numContacts, real duration);
+        void ResolveContacts(ParticleContact* contactArray, unsigned numContacts, real deltaTime);
 
     protected:
         /**

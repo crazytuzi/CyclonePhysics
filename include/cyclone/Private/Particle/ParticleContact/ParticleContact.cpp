@@ -2,11 +2,11 @@
 
 using namespace cyclone;
 
-void ParticleContact::Resolve(const real duration)
+void ParticleContact::Resolve(const real deltaTime)
 {
-    ResolveVelocity(duration);
+    ResolveVelocity(deltaTime);
 
-    ResolveInterpenetration(duration);
+    ResolveInterpenetration(deltaTime);
 }
 
 real ParticleContact::CalculateSeparatingVelocity() const
@@ -26,7 +26,7 @@ real ParticleContact::CalculateSeparatingVelocity() const
     return relativeVelocity | contactNormal;
 }
 
-void ParticleContact::ResolveVelocity(const real duration)
+void ParticleContact::ResolveVelocity(const real deltaTime)
 {
     if (particle[0] == nullptr)
     {
@@ -55,7 +55,7 @@ void ParticleContact::ResolveVelocity(const real duration)
         accelerationVelocity -= particle[1]->GetAcceleration();
     }
 
-    const auto accelerationSepVelocity = accelerationVelocity | contactNormal * duration;
+    const auto accelerationSepVelocity = accelerationVelocity | contactNormal * deltaTime;
 
     // If we've got a closing velocity due to acceleration build-up,
     // remove it from the new separating velocity
@@ -106,7 +106,7 @@ void ParticleContact::ResolveVelocity(const real duration)
     }
 }
 
-void ParticleContact::ResolveInterpenetration(const real duration)
+void ParticleContact::ResolveInterpenetration(const real deltaTime)
 {
     // If we don't have any penetration, skip this step.
     if (penetration <= 0)

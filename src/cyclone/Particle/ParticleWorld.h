@@ -49,14 +49,14 @@ namespace cyclone
 
         /**
         * Integrates all the particles in this world forward in time
-        * by the given duration.
+        * by the given deltaTime.
         */
-        void Integrate(real duration);
+        void Integrate(real deltaTime);
 
         /**
         * Processes all the physics for the particle world.
         */
-        void RunPhysics(real duration);
+        void RunPhysics(real deltaTime);
 
         /**
         * Initializes the world for a simulation frame. This clears

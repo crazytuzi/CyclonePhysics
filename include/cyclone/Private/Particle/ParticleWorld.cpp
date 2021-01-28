@@ -46,22 +46,22 @@ unsigned ParticleWorld::GenerateContacts()
     return maxContacts - limit;
 }
 
-void ParticleWorld::Integrate(const real duration)
+void ParticleWorld::Integrate(const real deltaTime)
 {
     for (auto& particle : particles)
     {
         // Remove all forces from the accumulator
-        particle->Integrate(duration);
+        particle->Integrate(deltaTime);
     }
 }
 
-void ParticleWorld::RunPhysics(const real duration)
+void ParticleWorld::RunPhysics(const real deltaTime)
 {
     // First apply the force generators
-    registry.UpdateForces(duration);
+    registry.UpdateForces(deltaTime);
 
     // Then integrate the objects
-    Integrate(duration);
+    Integrate(deltaTime);
 
     // Generate contacts
     const auto usedContacts = GenerateContacts();
@@ -74,7 +74,7 @@ void ParticleWorld::RunPhysics(const real duration)
             resolver.SetIterations(usedContacts * 2);
         }
 
-        resolver.ResolveContacts(contacts, usedContacts, duration);
+        resolver.ResolveContacts(contacts, usedContacts, deltaTime);
     }
 }
 

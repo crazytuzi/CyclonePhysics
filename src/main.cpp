@@ -60,7 +60,6 @@ void Display()
 * Called when a mouse button is pressed. Delegates to the
 * application.
 */
-
 void Mouse(const int button, const int state, const int x, const int y)
 {
     App->Mouse(button, state, x, y);

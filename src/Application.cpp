@@ -108,7 +108,7 @@ void Application::RenderText(const float x, float y, const char* text, void* fon
     }
 
     // Loop through characters displaying them.
-    auto length = strlen(text);
+    const auto length = strlen(text);
 
     glRasterPos2f(x, y);
 

@@ -1,6 +1,6 @@
 #include "BlobForceGenerator.h"
 
-void BlobForceGenerator::UpdateForce(cyclone::Particle* particle, cyclone::real duration)
+void BlobForceGenerator::UpdateForce(cyclone::Particle* particle, cyclone::real deltaTime)
 {
     auto joinCount = 0u;
 

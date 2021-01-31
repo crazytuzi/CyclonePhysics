@@ -10,11 +10,11 @@ class Firework : public cyclone::Particle
 {
 public:
     /**
-    * Updates the firework by the given duration of time. Returns true
+    * Updates the firework by the given deltaTime of time. Returns true
     * if the firework has reached the end of its life and needs to be
     * removed.
     */
-    bool Update(cyclone::real duration);
+    bool Update(cyclone::real deltaTime);
 
 public:
     /** Fireworks have an integer type, used for firework rules. */

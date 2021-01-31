@@ -12,7 +12,7 @@
 class BlobForceGenerator : public cyclone::ParticleForceGenerator
 {
 public:
-    void UpdateForce(cyclone::Particle* particle, cyclone::real duration) override;
+    void UpdateForce(cyclone::Particle* particle, cyclone::real deltaTime) override;
 
 public:
     /**

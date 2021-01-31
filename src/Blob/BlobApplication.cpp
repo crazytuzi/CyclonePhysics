@@ -107,6 +107,13 @@ BlobApplication::~BlobApplication()
 
         blobs = nullptr;
     }
+
+    if(platforms)
+    {
+        delete[] platforms;
+
+        platforms = nullptr;
+    }
 }
 
 const char* BlobApplication::GetTitle()

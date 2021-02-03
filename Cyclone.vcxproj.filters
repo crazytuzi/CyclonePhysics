@@ -37,6 +37,12 @@
     <Filter Include="Source Files\Core">
       <UniqueIdentifier>{1a4264f2-26c5-4b5e-9b48-0a673fda662c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\RigidBody">
+      <UniqueIdentifier>{0dcedcca-2c2d-453a-a486-02e9cb08683e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\RigidBody">
+      <UniqueIdentifier>{2bf98b1e-e475-4f4f-b1de-37cdf6e20754}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\cyclone\Public\Core\Core.h">
@@ -126,6 +132,9 @@
     <ClInclude Include="include\cyclone\Public\Particle\ParticleContact\GroundContacts.h">
       <Filter>Header Files\Particle\ParticleContact</Filter>
     </ClInclude>
+    <ClInclude Include="include\cyclone\Public\RigidBody\RigidBody.h">
+      <Filter>Header Files\RigidBody</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="include\cyclone\Private\Core\Matrix.cpp">
@@ -202,6 +211,9 @@
     </ClCompile>
     <ClCompile Include="include\cyclone\Private\Particle\ParticleContact\GroundContacts.cpp">
       <Filter>Source Files\Particle\ParticleContact</Filter>
+    </ClCompile>
+    <ClCompile Include="include\cyclone\Private\RigidBody\RigidBody.cpp">
+      <Filter>Source Files\RigidBody</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

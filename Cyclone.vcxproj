@@ -48,6 +48,7 @@
     <ClInclude Include="include\cyclone\Public\Particle\ParticleForce\ParticleGravity.h" />
     <ClInclude Include="include\cyclone\Public\Particle\ParticleForce\ParticleSpring.h" />
     <ClInclude Include="include\cyclone\Public\Particle\ParticleWorld.h" />
+    <ClInclude Include="include\cyclone\Public\RigidBody\RigidBody.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="include\cyclone\Private\Core\Matrix.cpp" />
@@ -75,6 +76,7 @@
     <ClCompile Include="include\cyclone\Private\Particle\ParticleForce\ParticleGravity.cpp" />
     <ClCompile Include="include\cyclone\Private\Particle\ParticleForce\ParticleSpring.cpp" />
     <ClCompile Include="include\cyclone\Private\Particle\ParticleWorld.cpp" />
+    <ClCompile Include="include\cyclone\Private\RigidBody\RigidBody.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

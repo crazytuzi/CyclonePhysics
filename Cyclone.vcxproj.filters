@@ -43,6 +43,12 @@
     <Filter Include="Source Files\RigidBody">
       <UniqueIdentifier>{2bf98b1e-e475-4f4f-b1de-37cdf6e20754}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\RigidBody\CoarseCollision">
+      <UniqueIdentifier>{ae08229f-7fb0-4dad-8c73-f67a89c45d3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\RigidBody\CoarseCollision">
+      <UniqueIdentifier>{bbae7b44-5521-4ca2-91ae-356d32bd9043}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\cyclone\Public\Core\Core.h">
@@ -135,6 +141,9 @@
     <ClInclude Include="include\cyclone\Public\RigidBody\RigidBody.h">
       <Filter>Header Files\RigidBody</Filter>
     </ClInclude>
+    <ClInclude Include="include\cyclone\Public\RigidBody\CoarseCollision\BoundingSphere.h">
+      <Filter>Header Files\RigidBody\CoarseCollision</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="include\cyclone\Private\Core\Matrix.cpp">
@@ -214,6 +223,9 @@
     </ClCompile>
     <ClCompile Include="include\cyclone\Private\RigidBody\RigidBody.cpp">
       <Filter>Source Files\RigidBody</Filter>
+    </ClCompile>
+    <ClCompile Include="include\cyclone\Private\RigidBody\CoarseCollision\BoundingSphere.cpp">
+      <Filter>Source Files\RigidBody\CoarseCollision</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

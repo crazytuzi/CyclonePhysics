@@ -144,6 +144,9 @@
     <ClInclude Include="include\cyclone\Public\RigidBody\CoarseCollision\BoundingSphere.h">
       <Filter>Header Files\RigidBody\CoarseCollision</Filter>
     </ClInclude>
+    <ClInclude Include="include\cyclone\Public\RigidBody\CoarseCollision\BVHNode.h">
+      <Filter>Header Files\RigidBody\CoarseCollision</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="include\cyclone\Private\Core\Matrix.cpp">

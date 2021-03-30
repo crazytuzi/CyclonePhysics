@@ -50,6 +50,7 @@
     <ClInclude Include="include\cyclone\Public\Particle\ParticleWorld.h" />
     <ClInclude Include="include\cyclone\Public\RigidBody\CoarseCollision\BoundingSphere.h" />
     <ClInclude Include="include\cyclone\Public\RigidBody\CoarseCollision\BVHNode.h" />
+    <ClInclude Include="include\cyclone\Public\RigidBody\Force\ForceGenerator.h" />
     <ClInclude Include="include\cyclone\Public\RigidBody\RigidBody.h" />
   </ItemGroup>
   <ItemGroup>

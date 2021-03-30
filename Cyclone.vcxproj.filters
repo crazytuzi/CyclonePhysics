@@ -49,6 +49,12 @@
     <Filter Include="Source Files\RigidBody\CoarseCollision">
       <UniqueIdentifier>{bbae7b44-5521-4ca2-91ae-356d32bd9043}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\RigidBody\Force">
+      <UniqueIdentifier>{7c9f7b3f-fc18-4c5e-ab5f-f2de6d759a13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\RigidBody\Force">
+      <UniqueIdentifier>{8f8cd943-a7ed-4cbd-8d36-d6830435bffc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\cyclone\Public\Core\Core.h">
@@ -146,6 +152,9 @@
     </ClInclude>
     <ClInclude Include="include\cyclone\Public\RigidBody\CoarseCollision\BVHNode.h">
       <Filter>Header Files\RigidBody\CoarseCollision</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cyclone\Public\RigidBody\Force\ForceGenerator.h">
+      <Filter>Header Files\RigidBody\Force</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

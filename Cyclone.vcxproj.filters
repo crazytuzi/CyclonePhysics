@@ -162,6 +162,9 @@
     <ClInclude Include="include\cyclone\Public\RigidBody\Force\Spring.h">
       <Filter>Header Files\RigidBody\Force</Filter>
     </ClInclude>
+    <ClInclude Include="include\cyclone\Public\RigidBody\Force\ForceRegistry.h">
+      <Filter>Header Files\RigidBody\Force</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="include\cyclone\Private\Core\Matrix.cpp">
@@ -249,6 +252,9 @@
       <Filter>Source Files\RigidBody\Force</Filter>
     </ClCompile>
     <ClCompile Include="include\cyclone\Private\RigidBody\Force\Spring.cpp">
+      <Filter>Source Files\RigidBody\Force</Filter>
+    </ClCompile>
+    <ClCompile Include="include\cyclone\Private\RigidBody\Force\ForceRegistry.cpp">
       <Filter>Source Files\RigidBody\Force</Filter>
     </ClCompile>
   </ItemGroup>

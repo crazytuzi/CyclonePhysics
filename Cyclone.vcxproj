@@ -51,6 +51,7 @@
     <ClInclude Include="include\cyclone\Public\RigidBody\CoarseCollision\BoundingSphere.h" />
     <ClInclude Include="include\cyclone\Public\RigidBody\CoarseCollision\BVHNode.h" />
     <ClInclude Include="include\cyclone\Public\RigidBody\Force\ForceGenerator.h" />
+    <ClInclude Include="include\cyclone\Public\RigidBody\Force\ForceRegistry.h" />
     <ClInclude Include="include\cyclone\Public\RigidBody\Force\Gravity.h" />
     <ClInclude Include="include\cyclone\Public\RigidBody\Force\Spring.h" />
     <ClInclude Include="include\cyclone\Public\RigidBody\RigidBody.h" />
@@ -82,6 +83,7 @@
     <ClCompile Include="include\cyclone\Private\Particle\ParticleForce\ParticleSpring.cpp" />
     <ClCompile Include="include\cyclone\Private\Particle\ParticleWorld.cpp" />
     <ClCompile Include="include\cyclone\Private\RigidBody\CoarseCollision\BoundingSphere.cpp" />
+    <ClCompile Include="include\cyclone\Private\RigidBody\Force\ForceRegistry.cpp" />
     <ClCompile Include="include\cyclone\Private\RigidBody\Force\Gravity.cpp" />
     <ClCompile Include="include\cyclone\Private\RigidBody\Force\Spring.cpp" />
     <ClCompile Include="include\cyclone\Private\RigidBody\RigidBody.cpp" />

@@ -156,6 +156,12 @@
     <ClInclude Include="include\cyclone\Public\RigidBody\Force\ForceGenerator.h">
       <Filter>Header Files\RigidBody\Force</Filter>
     </ClInclude>
+    <ClInclude Include="include\cyclone\Public\RigidBody\Force\Gravity.h">
+      <Filter>Header Files\RigidBody\Force</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cyclone\Public\RigidBody\Force\Spring.h">
+      <Filter>Header Files\RigidBody\Force</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="include\cyclone\Private\Core\Matrix.cpp">
@@ -238,6 +244,12 @@
     </ClCompile>
     <ClCompile Include="include\cyclone\Private\RigidBody\CoarseCollision\BoundingSphere.cpp">
       <Filter>Source Files\RigidBody\CoarseCollision</Filter>
+    </ClCompile>
+    <ClCompile Include="include\cyclone\Private\RigidBody\Force\Gravity.cpp">
+      <Filter>Source Files\RigidBody\Force</Filter>
+    </ClCompile>
+    <ClCompile Include="include\cyclone\Private\RigidBody\Force\Spring.cpp">
+      <Filter>Source Files\RigidBody\Force</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

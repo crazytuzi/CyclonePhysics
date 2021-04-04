@@ -73,6 +73,13 @@ namespace cyclone
         Quaternion operator+=(const Quaternion& q);
 
         /**
+        * Adds to this quaternion.
+        * This is a component-wise addition;
+        * composing quaternions should be done via multiplication.
+        */
+        Quaternion operator+=(const Vector3& v);
+
+        /**
         * Gets the result of subtracting a Quaternion to this.
         * This is a component-wise subtraction;
         * composing quaternions should be done via multiplication.

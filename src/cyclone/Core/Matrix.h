@@ -2,7 +2,6 @@
 
 #include "Precision.h"
 #include "Vector3.h"
-#include "Vector4.h"
 
 namespace cyclone
 {
@@ -25,12 +24,15 @@ namespace cyclone
         /**
         * Constructors.
         */
-        Matrix();
+        Matrix(const Vector3& InX, const Vector3& InY, const Vector3& InZ, const Vector3& InW);
 
         /**
         * Constructors.
         */
-        Matrix(const Vector3& InX, const Vector3& InY, const Vector3& InZ, const Vector3& InW);
+        Matrix(real x0 = 0.f, real x1 = 0.f, real x2 = 0.f, real x3 = 0.f,
+               real y0 = 0.f, real y1 = 0.f, real y2 = 0.f, real y3 = 0.f,
+               real z0 = 0.f, real z1 = 0.f, real z2 = 0.f, real z3 = 0.f,
+               real w0 = 0.f, real w1 = 0.f, real w2 = 0.f, real w3 = 1.f);
 
         /**
         * Set this to the identity matrix
@@ -82,12 +84,12 @@ namespace cyclone
         /**
         * Transform the given vector by this matrix.
         */
-        Vector4 operator*(const Vector4& v) const;
+        Vector3 operator*(const Vector3& v) const;
 
         /**
         * Transform a direction vector.
         */
-        Vector4 TransformVector(const Vector3& v) const;
+        Vector3 TransformVector(const Vector3& v) const;
 
         /**
         * Transform a direction vector by the inverse of this matrix.
@@ -98,7 +100,7 @@ namespace cyclone
         * Transform a location - will take into
         * account translation part of the Matrix.
         */
-        Vector4 TransformPosition(const Vector3& v) const;
+        Vector3 TransformPosition(const Vector3& v) const;
 
         /**
         * Inverts the matrix and then transforms V
@@ -120,5 +122,11 @@ namespace cyclone
         * Returns a new matrix containing the inverse of this matrix.
         */
         Matrix Inverse() const;
+
+    private:
+        /**
+        * Calculate the inverse of an Matrix.
+        */
+        static void VectorMatrixInverse(void* dstMatrix, const void* srcMatrix);
     };
 }

@@ -1,6 +1,6 @@
 #pragma once
 
-#include "cyclone/Particle/Particle.h"
+#include "Particle/Particle.h"
 
 namespace cyclone
 {

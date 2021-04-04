@@ -1,7 +1,7 @@
 #pragma once
 
 #include "ParticleContactGenerator.h"
-#include "cyclone/Particle/ParticleWorld.h"
+#include "Particle/ParticleWorld.h"
 
 namespace cyclone
 {

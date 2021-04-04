@@ -54,9 +54,9 @@ void RigidBody::Integrate(const real deltaTime)
     position += velocity * deltaTime;
 
     // Update angular position.
-    orientation += Quaternion::MakeFromEuler(rotation * deltaTime);
+    orientation += rotation * deltaTime;
 
-    // Normalise the orientation, and update the matrices with the new
+    // Normalize the orientation, and update the matrices with the new
     // position and orientation
     CalculateDerivedData();
 
@@ -553,7 +553,7 @@ void RigidBody::CalculateTransformMatrix(Matrix& transformMatrix, const Vector3&
 
     transformMatrix.M[3][0] = transformMatrix.M[3][1] = transformMatrix.M[3][2] = 0;
 
-    transformMatrix.M[3][3] = 1;
+    transformMatrix.M[3][3] = 1.f;
 }
 
 void RigidBody::TransformInertiaTensor(Matrix& inverseInertiaTensorWorld, const Matrix& inverseInertiaTensorLocal,
@@ -576,7 +576,7 @@ void RigidBody::TransformInertiaTensor(Matrix& inverseInertiaTensorWorld, const 
         + transformMatrix.M[1][2] * inverseInertiaTensorLocal.M[2][0];
 
     const auto t33 = transformMatrix.M[1][0] * inverseInertiaTensorLocal.M[0][1] + transformMatrix.M[1][1] *
-        inverseInertiaTensorLocal.M[0][1]
+        inverseInertiaTensorLocal.M[1][1]
         + transformMatrix.M[1][2] * inverseInertiaTensorLocal.M[2][1];
 
     const auto t38 = transformMatrix.M[1][0] * inverseInertiaTensorLocal.M[0][2] + transformMatrix.M[1][1] *

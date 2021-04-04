@@ -26,13 +26,13 @@ namespace cyclone
         /**
         * Constructor.
         */
-        explicit Vector4(const Vector3& v, real w = 1.f);
+        explicit Vector4(const Vector3& v, real w = 0.f);
 
         /**
         * Creates and initializes a new vector
         * from the specified components.
         */
-        explicit Vector4(real x = 0.f, real y = 0.f, real z = 0.f, real w = 1.f);
+        explicit Vector4(real x = 0.f, real y = 0.f, real z = 0.f, real w = 0.f);
 
         /**
         * Creates and initializes a new vector

@@ -7,7 +7,7 @@
 * basic building block of all the physics system.
 */
 
-#include "cyclone/Core/Core.h"
+#include "Core/Core.h"
 
 namespace cyclone
 {

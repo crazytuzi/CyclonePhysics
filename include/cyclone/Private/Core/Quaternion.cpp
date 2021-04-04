@@ -30,6 +30,23 @@ Quaternion Quaternion::operator+=(const Quaternion& q)
     return *this;
 }
 
+Quaternion Quaternion::operator+=(const Vector3& v)
+{
+    Quaternion q(v.x, v.y, v.z, 0.f);
+
+    q *= *this;
+
+    a += q.a * 0.5f;
+
+    i += q.i * 0.5f;
+
+    j += q.j * 0.5f;
+
+    k += q.k * 0.5f;
+
+    return q;
+}
+
 Quaternion Quaternion::operator-(const Quaternion& q) const
 {
     return Quaternion(i - q.i, j - q.j, k - q.k, a - q.a);
@@ -196,13 +213,13 @@ Vector3 Quaternion::Euler() const
 
     const auto r33 = q00 - q11 - q22 + q33;
 
-    if (real_abs(r31) > 0.999999)
+    if (real_abs(r31) > 0.999999f)
     {
         const auto r12 = 2 * (i * j - a * k);
 
         const auto r13 = 2 * (i * k + a * j);
 
-        return Vector3(RadiansToDegrees(0.0f),
+        return Vector3(RadiansToDegrees(0.f),
                        RadiansToDegrees(-(R_PI / 2) * r31 / fabs(r31)),
                        RadiansToDegrees(atan2(-r12, -r31 * r13)));
     }

@@ -1,7 +1,7 @@
 #pragma once
 
-#include "cyclone/Particle/Particle.h"
-#include "cyclone/Particle/ParticleForce/ParticleForceGenerator.h"
+#include "Particle/Particle.h"
+#include "Particle/ParticleForce/ParticleForceGenerator.h"
 #include <vector>
 
 namespace cyclone

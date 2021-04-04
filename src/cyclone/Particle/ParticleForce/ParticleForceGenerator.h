@@ -6,7 +6,7 @@
 * This file contains the interface particle force generators.
 */
 
-#include "cyclone/Particle/Particle.h"
+#include "Particle/Particle.h"
 
 namespace cyclone
 {

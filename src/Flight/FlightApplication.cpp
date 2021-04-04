@@ -178,7 +178,7 @@ FlightApplication::~FlightApplication()
 
 const char* FlightApplication::GetTitle()
 {
-    return "Platform";
+    return "Flight";
 }
 
 void FlightApplication::Display()

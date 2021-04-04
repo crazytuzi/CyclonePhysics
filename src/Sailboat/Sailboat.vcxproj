@@ -18,92 +18,16 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="include\cyclone\Public\Core\Core.h" />
-    <ClInclude Include="include\cyclone\Public\Core\Matrix.h" />
-    <ClInclude Include="include\cyclone\Public\Core\Precision.h" />
-    <ClInclude Include="include\cyclone\Public\Core\Quaternion.h" />
-    <ClInclude Include="include\cyclone\Public\Core\Random.h" />
-    <ClInclude Include="include\cyclone\Public\Core\Vector3.h" />
-    <ClInclude Include="include\cyclone\Public\Core\Vector4.h" />
-    <ClInclude Include="include\cyclone\Public\Particle\Particle.h" />
-    <ClInclude Include="include\cyclone\Public\Particle\ParticleContact\GroundContacts.h" />
-    <ClInclude Include="include\cyclone\Public\Particle\ParticleContact\ParticleCable.h" />
-    <ClInclude Include="include\cyclone\Public\Particle\ParticleContact\ParticleCableConstraint.h" />
-    <ClInclude Include="include\cyclone\Public\Particle\ParticleContact\ParticleConstraint.h" />
-    <ClInclude Include="include\cyclone\Public\Particle\ParticleContact\ParticleContact.h" />
-    <ClInclude Include="include\cyclone\Public\Particle\ParticleContact\ParticleContactGenerator.h" />
-    <ClInclude Include="include\cyclone\Public\Particle\ParticleContact\ParticleContactResolver.h" />
-    <ClInclude Include="include\cyclone\Public\Particle\ParticleContact\ParticleLink.h" />
-    <ClInclude Include="include\cyclone\Public\Particle\ParticleContact\ParticleRod.h" />
-    <ClInclude Include="include\cyclone\Public\Particle\ParticleContact\ParticleRodConstraint.h" />
-    <ClInclude Include="include\cyclone\Public\Particle\ParticleForce\ParticleAnchoredBungee.h" />
-    <ClInclude Include="include\cyclone\Public\Particle\ParticleForce\ParticleAnchoredSpring.h" />
-    <ClInclude Include="include\cyclone\Public\Particle\ParticleForce\ParticleBungee.h" />
-    <ClInclude Include="include\cyclone\Public\Particle\ParticleForce\ParticleBuoyancy.h" />
-    <ClInclude Include="include\cyclone\Public\Particle\ParticleForce\ParticleDrag.h" />
-    <ClInclude Include="include\cyclone\Public\Particle\ParticleForce\ParticleFakeSpring.h" />
-    <ClInclude Include="include\cyclone\Public\Particle\ParticleForce\ParticleForceGenerator.h" />
-    <ClInclude Include="include\cyclone\Public\Particle\ParticleForce\ParticleForceRegistry.h" />
-    <ClInclude Include="include\cyclone\Public\Particle\ParticleForce\ParticleGravity.h" />
-    <ClInclude Include="include\cyclone\Public\Particle\ParticleForce\ParticleSpring.h" />
-    <ClInclude Include="include\cyclone\Public\Particle\ParticleWorld.h" />
-    <ClInclude Include="include\cyclone\Public\RigidBody\CoarseCollision\BoundingSphere.h" />
-    <ClInclude Include="include\cyclone\Public\RigidBody\CoarseCollision\BVHNode.h" />
-    <ClInclude Include="include\cyclone\Public\RigidBody\Force\Aero.h" />
-    <ClInclude Include="include\cyclone\Public\RigidBody\Force\AeroControl.h" />
-    <ClInclude Include="include\cyclone\Public\RigidBody\Force\Buoyancy.h" />
-    <ClInclude Include="include\cyclone\Public\RigidBody\Force\ForceGenerator.h" />
-    <ClInclude Include="include\cyclone\Public\RigidBody\Force\ForceRegistry.h" />
-    <ClInclude Include="include\cyclone\Public\RigidBody\Force\Gravity.h" />
-    <ClInclude Include="include\cyclone\Public\RigidBody\Force\Spring.h" />
-    <ClInclude Include="include\cyclone\Public\RigidBody\RigidBody.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="include\cyclone\Private\Core\Matrix.cpp" />
-    <ClCompile Include="include\cyclone\Private\Core\Quaternion.cpp" />
-    <ClCompile Include="include\cyclone\Private\Core\Random.cpp" />
-    <ClCompile Include="include\cyclone\Private\Core\Vector3.cpp" />
-    <ClCompile Include="include\cyclone\Private\Core\Vector4.cpp" />
-    <ClCompile Include="include\cyclone\Private\Particle\Particle.cpp" />
-    <ClCompile Include="include\cyclone\Private\Particle\ParticleContact\GroundContacts.cpp" />
-    <ClCompile Include="include\cyclone\Private\Particle\ParticleContact\ParticleCable.cpp" />
-    <ClCompile Include="include\cyclone\Private\Particle\ParticleContact\ParticleCableConstraint.cpp" />
-    <ClCompile Include="include\cyclone\Private\Particle\ParticleContact\ParticleConstraint.cpp" />
-    <ClCompile Include="include\cyclone\Private\Particle\ParticleContact\ParticleContact.cpp" />
-    <ClCompile Include="include\cyclone\Private\Particle\ParticleContact\ParticleContactResolver.cpp" />
-    <ClCompile Include="include\cyclone\Private\Particle\ParticleContact\ParticleLink.cpp" />
-    <ClCompile Include="include\cyclone\Private\Particle\ParticleContact\ParticleRod.cpp" />
-    <ClCompile Include="include\cyclone\Private\Particle\ParticleContact\ParticleRodConstraint.cpp" />
-    <ClCompile Include="include\cyclone\Private\Particle\ParticleForce\ParticleAnchoredBungee.cpp" />
-    <ClCompile Include="include\cyclone\Private\Particle\ParticleForce\ParticleAnchoredSpring.cpp" />
-    <ClCompile Include="include\cyclone\Private\Particle\ParticleForce\ParticleBungee.cpp" />
-    <ClCompile Include="include\cyclone\Private\Particle\ParticleForce\ParticleBuoyancy.cpp" />
-    <ClCompile Include="include\cyclone\Private\Particle\ParticleForce\ParticleDrag.cpp" />
-    <ClCompile Include="include\cyclone\Private\Particle\ParticleForce\ParticleFakeSpring.cpp" />
-    <ClCompile Include="include\cyclone\Private\Particle\ParticleForce\ParticleForceRegistry.cpp" />
-    <ClCompile Include="include\cyclone\Private\Particle\ParticleForce\ParticleGravity.cpp" />
-    <ClCompile Include="include\cyclone\Private\Particle\ParticleForce\ParticleSpring.cpp" />
-    <ClCompile Include="include\cyclone\Private\Particle\ParticleWorld.cpp" />
-    <ClCompile Include="include\cyclone\Private\RigidBody\CoarseCollision\BoundingSphere.cpp" />
-    <ClCompile Include="include\cyclone\Private\RigidBody\Force\Aero.cpp" />
-    <ClCompile Include="include\cyclone\Private\RigidBody\Force\AeroControl.cpp" />
-    <ClCompile Include="include\cyclone\Private\RigidBody\Force\Buoyancy.cpp" />
-    <ClCompile Include="include\cyclone\Private\RigidBody\Force\ForceRegistry.cpp" />
-    <ClCompile Include="include\cyclone\Private\RigidBody\Force\Gravity.cpp" />
-    <ClCompile Include="include\cyclone\Private\RigidBody\Force\Spring.cpp" />
-    <ClCompile Include="include\cyclone\Private\RigidBody\RigidBody.cpp" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{e96bf6a8-a536-4b5b-873a-8594af14d582}</ProjectGuid>
-    <RootNamespace>Cyclone</RootNamespace>
+    <ProjectGuid>{2a614869-26b1-418d-88c4-2998fa723c1c}</ProjectGuid>
+    <RootNamespace>Sailboat</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
@@ -148,8 +72,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(SolutionDir)\lib\</OutDir>
-    <TargetName>cyclone</TargetName>
+    <LibraryPath>$(SolutionDir)\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -166,11 +89,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(ProjectDir)\include\cyclone\Public;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\src\cyclone;$(SolutionDir)\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>winmm.lib;glut32.lib;glu32.lib;opengl32.lib;cyclone.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -217,6 +141,19 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Application.cpp" />
+    <ClCompile Include="..\main.cpp" />
+    <ClCompile Include="..\MassAggregateApplication.cpp" />
+    <ClCompile Include="..\Timing.cpp" />
+    <ClCompile Include="SailboatApplication.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Application.h" />
+    <ClInclude Include="..\MassAggregateApplication.h" />
+    <ClInclude Include="..\Timing.h" />
+    <ClInclude Include="SailboatApplication.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

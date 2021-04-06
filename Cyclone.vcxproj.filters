@@ -55,6 +55,12 @@
     <Filter Include="Source Files\RigidBody\Force">
       <UniqueIdentifier>{8f8cd943-a7ed-4cbd-8d36-d6830435bffc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\RigidBody\Contact">
+      <UniqueIdentifier>{66e1e7ef-4bac-4f20-8233-a9247aafd8a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\RigidBody\Contact">
+      <UniqueIdentifier>{080c3306-1ef8-4aad-a64e-8fc44bef670d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\cyclone\Public\Core\Core.h">
@@ -174,6 +180,15 @@
     <ClInclude Include="include\cyclone\Public\RigidBody\Force\Buoyancy.h">
       <Filter>Header Files\RigidBody\Force</Filter>
     </ClInclude>
+    <ClInclude Include="include\cyclone\Public\RigidBody\Contact\Contact.h">
+      <Filter>Header Files\RigidBody\Contact</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cyclone\Public\RigidBody\Contact\ContactResolver.h">
+      <Filter>Header Files\RigidBody\Contact</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cyclone\Public\RigidBody\Contact\ContactGenerator.h">
+      <Filter>Header Files\RigidBody\Contact</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="include\cyclone\Private\Core\Matrix.cpp">
@@ -274,6 +289,12 @@
     </ClCompile>
     <ClCompile Include="include\cyclone\Private\RigidBody\Force\Buoyancy.cpp">
       <Filter>Source Files\RigidBody\Force</Filter>
+    </ClCompile>
+    <ClCompile Include="include\cyclone\Private\RigidBody\Contact\Contact.cpp">
+      <Filter>Source Files\RigidBody\Contact</Filter>
+    </ClCompile>
+    <ClCompile Include="include\cyclone\Private\RigidBody\Contact\ContactResolver.cpp">
+      <Filter>Source Files\RigidBody\Contact</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -24,7 +24,7 @@ namespace cyclone
         /**
         * Constructors.
         */
-        Matrix(const Vector3& InX, const Vector3& InY, const Vector3& InZ, const Vector3& InW);
+        Matrix(const Vector3& InX, const Vector3& InY, const Vector3& InZ, const Vector3& InW = Vector3::Zero);
 
         /**
         * Constructors.

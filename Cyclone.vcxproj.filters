@@ -61,6 +61,12 @@
     <Filter Include="Source Files\RigidBody\Contact">
       <UniqueIdentifier>{080c3306-1ef8-4aad-a64e-8fc44bef670d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\RigidBody\FineCollision">
+      <UniqueIdentifier>{0c9452eb-a550-4859-856b-725fa712be1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\RigidBody\FineCollision">
+      <UniqueIdentifier>{532f2b99-97c8-42ef-9380-fa37b0d699c4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\cyclone\Public\Core\Core.h">
@@ -189,6 +195,24 @@
     <ClInclude Include="include\cyclone\Public\RigidBody\Contact\ContactGenerator.h">
       <Filter>Header Files\RigidBody\Contact</Filter>
     </ClInclude>
+    <ClInclude Include="include\cyclone\Public\RigidBody\FineCollision\CollisionPrimitive.h">
+      <Filter>Header Files\RigidBody\FineCollision</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cyclone\Public\RigidBody\FineCollision\CollisionSphere.h">
+      <Filter>Header Files\RigidBody\FineCollision</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cyclone\Public\RigidBody\FineCollision\CollisionPlane.h">
+      <Filter>Header Files\RigidBody\FineCollision</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cyclone\Public\RigidBody\FineCollision\CollisionBox.h">
+      <Filter>Header Files\RigidBody\FineCollision</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cyclone\Public\RigidBody\FineCollision\IntersectionTests.h">
+      <Filter>Header Files\RigidBody\FineCollision</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cyclone\Public\RigidBody\FineCollision\CollisionDetector.h">
+      <Filter>Header Files\RigidBody\FineCollision</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="include\cyclone\Private\Core\Matrix.cpp">
@@ -295,6 +319,15 @@
     </ClCompile>
     <ClCompile Include="include\cyclone\Private\RigidBody\Contact\ContactResolver.cpp">
       <Filter>Source Files\RigidBody\Contact</Filter>
+    </ClCompile>
+    <ClCompile Include="include\cyclone\Private\RigidBody\FineCollision\CollisionPrimitive.cpp">
+      <Filter>Source Files\RigidBody\FineCollision</Filter>
+    </ClCompile>
+    <ClCompile Include="include\cyclone\Private\RigidBody\FineCollision\IntersectionTests.cpp">
+      <Filter>Source Files\RigidBody\FineCollision</Filter>
+    </ClCompile>
+    <ClCompile Include="include\cyclone\Private\RigidBody\FineCollision\CollisionDetector.cpp">
+      <Filter>Source Files\RigidBody\FineCollision</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

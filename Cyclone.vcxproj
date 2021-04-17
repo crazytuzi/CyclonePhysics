@@ -53,6 +53,12 @@
     <ClInclude Include="include\cyclone\Public\RigidBody\Contact\Contact.h" />
     <ClInclude Include="include\cyclone\Public\RigidBody\Contact\ContactGenerator.h" />
     <ClInclude Include="include\cyclone\Public\RigidBody\Contact\ContactResolver.h" />
+    <ClInclude Include="include\cyclone\Public\RigidBody\FineCollision\CollisionBox.h" />
+    <ClInclude Include="include\cyclone\Public\RigidBody\FineCollision\CollisionDetector.h" />
+    <ClInclude Include="include\cyclone\Public\RigidBody\FineCollision\CollisionPlane.h" />
+    <ClInclude Include="include\cyclone\Public\RigidBody\FineCollision\CollisionPrimitive.h" />
+    <ClInclude Include="include\cyclone\Public\RigidBody\FineCollision\CollisionSphere.h" />
+    <ClInclude Include="include\cyclone\Public\RigidBody\FineCollision\IntersectionTests.h" />
     <ClInclude Include="include\cyclone\Public\RigidBody\Force\Aero.h" />
     <ClInclude Include="include\cyclone\Public\RigidBody\Force\AeroControl.h" />
     <ClInclude Include="include\cyclone\Public\RigidBody\Force\Buoyancy.h" />
@@ -91,6 +97,9 @@
     <ClCompile Include="include\cyclone\Private\RigidBody\CoarseCollision\BoundingSphere.cpp" />
     <ClCompile Include="include\cyclone\Private\RigidBody\Contact\Contact.cpp" />
     <ClCompile Include="include\cyclone\Private\RigidBody\Contact\ContactResolver.cpp" />
+    <ClCompile Include="include\cyclone\Private\RigidBody\FineCollision\CollisionDetector.cpp" />
+    <ClCompile Include="include\cyclone\Private\RigidBody\FineCollision\CollisionPrimitive.cpp" />
+    <ClCompile Include="include\cyclone\Private\RigidBody\FineCollision\IntersectionTests.cpp" />
     <ClCompile Include="include\cyclone\Private\RigidBody\Force\Aero.cpp" />
     <ClCompile Include="include\cyclone\Private\RigidBody\Force\AeroControl.cpp" />
     <ClCompile Include="include\cyclone\Private\RigidBody\Force\Buoyancy.cpp" />

@@ -213,6 +213,9 @@
     <ClInclude Include="include\cyclone\Public\RigidBody\FineCollision\CollisionDetector.h">
       <Filter>Header Files\RigidBody\FineCollision</Filter>
     </ClInclude>
+    <ClInclude Include="include\cyclone\Public\RigidBody\Contact\Joint.h">
+      <Filter>Header Files\RigidBody\Contact</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="include\cyclone\Private\Core\Matrix.cpp">
@@ -328,6 +331,9 @@
     </ClCompile>
     <ClCompile Include="include\cyclone\Private\RigidBody\FineCollision\CollisionDetector.cpp">
       <Filter>Source Files\RigidBody\FineCollision</Filter>
+    </ClCompile>
+    <ClCompile Include="include\cyclone\Private\RigidBody\Contact\Joint.cpp">
+      <Filter>Source Files\RigidBody\Contact</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

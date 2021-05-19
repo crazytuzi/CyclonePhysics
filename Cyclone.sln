@@ -21,6 +21,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Ragdoll", "src\Ragdoll\Ragd
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Fracture", "src\Fracture\Fracture.vcxproj", "{C81B1E9D-5BEF-41D2-971E-7EE04798C236}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Explosion", "src\Explosion\Explosion.vcxproj", "{DBCAD501-B329-4131-AC46-9EFAC7DBA465}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -101,6 +103,14 @@ Global
 		{C81B1E9D-5BEF-41D2-971E-7EE04798C236}.Release|x64.Build.0 = Release|x64
 		{C81B1E9D-5BEF-41D2-971E-7EE04798C236}.Release|x86.ActiveCfg = Release|Win32
 		{C81B1E9D-5BEF-41D2-971E-7EE04798C236}.Release|x86.Build.0 = Release|Win32
+		{DBCAD501-B329-4131-AC46-9EFAC7DBA465}.Debug|x64.ActiveCfg = Debug|x64
+		{DBCAD501-B329-4131-AC46-9EFAC7DBA465}.Debug|x64.Build.0 = Debug|x64
+		{DBCAD501-B329-4131-AC46-9EFAC7DBA465}.Debug|x86.ActiveCfg = Debug|Win32
+		{DBCAD501-B329-4131-AC46-9EFAC7DBA465}.Debug|x86.Build.0 = Debug|Win32
+		{DBCAD501-B329-4131-AC46-9EFAC7DBA465}.Release|x64.ActiveCfg = Release|x64
+		{DBCAD501-B329-4131-AC46-9EFAC7DBA465}.Release|x64.Build.0 = Release|x64
+		{DBCAD501-B329-4131-AC46-9EFAC7DBA465}.Release|x86.ActiveCfg = Release|Win32
+		{DBCAD501-B329-4131-AC46-9EFAC7DBA465}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
